@@ -1,1055 +1,826 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-    <link href="https://www.digicrd.in/assets/templates/template19/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Pick</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'>
+    <script src="https://kit.fontawesome.com/ce664af958.js" crossorigin="anonymous"></script>
     <link href="https://www.digicrd.in/assets/templates/common/css/star-rating.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css">
 
+    <!-- bootstrap select country -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,400,500'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/FontAwesome.otf'>
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf'>
 
 
-    <title>Business Card</title>
-    <script>
-        document.documentElement.style.setProperty('--theme-color', '#153E75');
-        document.documentElement.style.setProperty('--theme-color-light', '#153E7526');
-        document.documentElement.style.setProperty('--theme-color-medium', '#153E7575');
-        document.documentElement.style.setProperty('--theme-color-dark-lighter', '#153E75bf');
-        document.documentElement.style.setProperty('--theme-color-dark1', ColorLuminance('#153E75', -0.20));
-        document.documentElement.style.setProperty('--theme-color-dark2', ColorLuminance('#153E75', -0.40));
-        document.documentElement.style.setProperty('--theme-color-dark3', ColorLuminance('#153E75', -0.60));
-    </script>
-    <style>
-        .card{
-            border-radius: 1px!important;
-        }
-        .product-enquiry-section a{
-            background-color: black!important;
-            color: aliceblue;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="page-wrapper" id="home-section">
-        <div class="upper" style="background-color: rgb(255, 255, 255);">
-            <div class="views-label"><i class="fas fa-eye"></i> Views: <b>143</b></div>
-            <!-- User Profile Pic -->
-            <img src="https://www.digicrd.in/web-services/company-profile/5fbe37e87abd3-1606301672-5fbe37e87abd7.jpg"
-                class="profile-pic-img">
+    <div class="container-fluid">
+      
+        <div class="container-fluid mainPage ">
 
-            <!-- User Company Name -->
-            <div class="firmname" style="color: #153E75;">StandUp Startups</div>
-
-            <div class="firmname-underline"></div>
-            <div class="name" style="color: #153E75;"> MAHENDRA SINGH<br><span
-                    style="margin-top: 5px;display: inline"><i style="font-size: 12px;"> </i></span></div>
-        </div>
-        <div class="theme-stripe"></div>
-        <div class="trapezoid"></div>
-        <div class="lower">
-            <div class="contact-info-container">
-                <a class="contact-button call" target="_blank" href="tel:+916376443716">
-                    <i class="fas fa-phone contact-buttons-icon"></i>
-                    <span class="contact-buttons-text">+916376443716</span> <span
-                        class="contact-buttons-text">+919521474914</span> </a>
-                <a class="contact-button whatsapp" target="_blank"
-                    href="https://wa.me/916376443716?text=Got%20reference%20from%20your%20Digital%20vCard.%20Want%20to%20know%20more%20about%20your%20products%20and%20services.">
-                    <i class="fab fa-whatsapp contact-buttons-icon"></i>
-                    <span class="contact-buttons-text">+916376443716</span>
-                </a>
-                <a class="contact-button website" target="_blank" href="http://www.wtfstores.com" target="_blank">
-                    <i class="fas fa-globe contact-buttons-icon"></i>
-
-                    <span class="contact-buttons-text">
-                        www.wtfstores.com </span>
-                </a>
-                <a class="contact-button mail" target="_blank" href="mailto:wtfstores@gmail.com">
-                    <i class="fas fa-envelope contact-buttons-icon"></i>
-
-                    <span class="contact-buttons-text">wtfstores@gmail.com</span>
-                </a>
-                <a class="contact-button address" target="_blank" href="">
-                    <i class="fas fa-map-marker-alt contact-buttons-icon"></i>
-
-                    <span class="contact-buttons-text">
-                        Sushant City 1, Kalwar Road, Jaipur </span>
-                </a>
-            </div>
-            <div class="share-buttons-box">
-                <div class="whatsapp-input">
-                    <div class="input-wrapper">
-                        <input type="tel" id="whatsapp-input" class="input" placeholder="Enter whatsapp number"
-                            oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
-                    </div>
-                    <a class="whatsapp-button" target="_blank" href="javascript:;" onclick="handleWhatsappShare(this)">
-                        <i class="fab fa-whatsapp"></i>Share on Whatsapp
-                    </a>
+            <div class="page-wrapper" id="home-section">
+                <div class="upper" style="background-color: rgb(255, 255, 255);">
+                    <div class="views-label"><i class="fas fa-eye"></i> Views: <b>143</b></div>
+                    <!-- User Profile Pic -->
+                    <img src="http://www.standupstartups.com/img/logo.svg"
+                        class="profile-pic-img">
+        
+                    <!-- User Company Name -->
+                    <div class="firmname" style="color: #153E75;">StandUp Startups</div>
+        
+                    <div class="firmname-underline"></div>
+                    <div class="name" style="color: #153E75;"> SAVIN BAGOT<br><span
+                            style="margin-top: 5px;display: inline"><i style="font-size: 12px;"> </i></span></div>
                 </div>
-
-                <div class="p-20"></div>
-
-                <div class="shadow-buttons">
-                    <a class="shadow-button" href="vcard/we-the-farmer-dairy" download><i
-                            class="fas fa-download shadow-button-icon"></i>Add to Phone Book</a>
-                    <a class="shadow-button" onclick="openShareModal(this, `WE THE FARMER DAIRY`)"><i
-                            class="fas fa-share-alt shadow-button-icon"></i>Share</a>
-                </div>
-                <div><a class="shadow-button save-card-button"><i
-                            class="fas fa-cloud-download-alt shadow-button-icon"></i>Save Card</a></div>
-            </div>
-
-            <ul class="inprofile share-buttons">
-            </ul>
-
-            <div class="p-20"></div>
-        </div>
-    </div>
-    <div class="section-container" id="about-us-section">
-        <div class="theme-stripe"></div>
-        <div class="trapezoid section-top-trapezoid"></div>
-        <div class="separator"></div>
-        <div class="section-content-wrapper">
-            <h2 class="section-header">ABOUT US</h2>
-            <div class="section-header-underline"></div>
-            <table class="about-us-table">
-                <tbody>
-                    <tr>
-                        <td class="table-row-label">
-                            <h3 class="table-row-label-text">Company Name</h3><b class="table-row-label-separator">:</b>
-                        <td>
-                        <td class="table-row-value">
-                            WE THE FARMER DAIRY
-                        <td>
-                    </tr>
-                    <tr>
-                        <td class="table-row-label">
-                            <h3 class="table-row-label-text">Nature of business</h3><b
-                                class="table-row-label-separator">:</b>
-                        <td>
-                        <td class="table-row-value">
-                            Wholesaler, Retailer ,
-                        <td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3>Speciality</h3>
-            <p>
-            <ul>
-                <li>Qualitative products</li>
-                <li>Affordable pricing</li>
-                <li>Complete client satisfaction</li>
-            </ul>
-            </p>
-            <h3>About Us</h3>
-            <div class="about-us-text">
-                <p><b>DEALS IN ALL DAIRY PRODUCTS</b></p>
-                <p><b>OTHER FIRM ADDRESS- BOITAWALA, NIWARU ROAD, JAIPUR</b></p>
-                <p><span style="font-family: Poppins, sans-serif;">WTF Dairy Farm is a family-owned business with a
-                        philosophy that emphasizes ethics, sustainability and viability. ,represents our strive to be
-                        the industry leaders and change makers. We’ve created a sustainable, environmentally and
-                        technologically advanced dairy farm that produces and distributes the very best milk in terms of
-                        quality and purity</span></p>
-                <p><span style="font-family: Poppins, sans-serif;">We use local oil cakes in abundance for nutrition and
-                        grow our own grass, which comes from locally developed seeds that we fertilize with gobar (cow
-                        dung). Using wireless sensing technology, we monitor each cow’s health 24/7. Trained workers and
-                        veterinarians continuously analyze the computer data for proactive intervention to keep the cows
-                        healthy. Our cows are milked using an automated hygienic milking parlor system while music is
-                        played in the background to relax them</span></p>
-                <p><span style="font-family: Poppins, sans-serif;">At WtfDairy Farm, we strive at all times to follow
-                        best practices in our industry. Our entire dairy farm and the hygienic processes we use for milk
-                        collection and chilling is 21st Century state-of-the-art, a truly viable farm that Jaipur can be
-                        proud of.</span><span style="font-family: Poppins, sans-serif;"><br></span><span
-                        style="font-family: Poppins, sans-serif;"><br></span><b><br></b></p>
-            </div>
-            <div class="section-close"></div>
-        </div>
-        <div class="trapezoid section-bottom-trapezoid"></div>
-        <div class="theme-stripe"></div>
-    </div>
-
-
-    <div class="section-container" id="products-services-section">
-        <div class="theme-stripe"></div>
-        <div class="trapezoid section-top-trapezoid"></div>
-        <div class="section-content-wrapper">
-            <h2 class="section-header">PRODUCTS</h2>
-            <div class="p-10"></div>
-            <div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">GIR COW MILK</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="GIR COW MILK"
-                            src="https://www.digicrd.in/web-services/products/5fabdd42bec2e-1605098818-5fabdd42bec31.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
+                <div class="theme-stripe"></div>
+                <div class="trapezoid"></div>
+                <div class="lower">
+                    <div class="contact-info-container">
+                        <a class="contact-button call" target="_blank" href="tel:+916376443716">
+                            <i class="fas fa-phone contact-buttons-icon"></i>
+                            <span class="contact-buttons-text">+91 8875662611</span>  </a>
+                        <a class="contact-button whatsapp" target="_blank"
+                            href="https://wa.me/916376443716?text=Got%20reference%20from%20your%20Digital%20vCard.%20Want%20to%20know%20more%20about%20your%20products%20and%20services.">
+                            <i class="fab fa-whatsapp contact-buttons-icon"></i>
+                            <span class="contact-buttons-text">+91 8875662611</span>
+                        </a>
+                        <a class="contact-button website" target="_blank" href="http://www.standupstartups.com" target="_blank">
+                            <i class="fas fa-globe contact-buttons-icon"></i>
+        
+                            <span class="contact-buttons-text">
+                                www.standupstartups.com </span>
+                        </a>
+                        <a class="contact-button mail" target="_blank" href="mailto:info@standupstartups.com">
+                            <i class="fas fa-envelope contact-buttons-icon"></i>
+        
+                            <span class="contact-buttons-text">info@standupstartups.com</span>
+                        </a>
+                        <a class="contact-button address" target="_blank" href="">
+                            <i class="fas fa-map-marker-alt contact-buttons-icon"></i>
+        
+                            <span class="contact-buttons-text">
+                                36-B, Cooperative Colony, near Rathi Petrol Pump, Satya Vihar, Mittal Colony, Sodala, Jaipur, Rajasthan-302019 </span>
+                        </a>
                     </div>
-
-                    <div style="margin-bottom: 5px;">
-                        <br>
-                    </div>
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 97.00</strong>
+                    <div class="share-buttons-box">
+                        <div class="whatsapp-input">
+                            <div class="input-wrapper">
+                                <input type="tel" id="whatsapp-input" class="input" placeholder="Whatsapp number"
+                                    oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                            </div>
+                            <a class="whatsapp-button" target="_blank" href="javascript:;" onclick="handleWhatsappShare(this)">
+                                <i class="fab fa-whatsapp"></i>Share on Whatsapp
+                            </a>
                         </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: GIR COW MILK. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">BUFFALO MILK</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="BUFFALO MILK"
-                            src="https://www.digicrd.in/web-services/products/5fbe2b80c2d27-1606298496-5fbe2b80c2d2d.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 58.00</strong>
+        
+                        <div class="p-20"></div>
+        
+                        <div class="shadow-buttons">
+                            <a class="shadow-button" href="vcard/we-the-farmer-dairy" download><i
+                                    class="fas fa-download shadow-button-icon"></i>Add to Phone Book</a>
+                            <a class="shadow-button" onclick="openShareModal(this, `WE STANDUP STARTUPS`)"><i
+                                    class="fas fa-share-alt shadow-button-icon"></i>Share</a>
                         </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: BUFFALO MILK. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
+                        <div><a class="shadow-button save-card-button"><i
+                                    class="fas fa-cloud-download-alt shadow-button-icon"></i>Save Card</a></div>
                     </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">GIR COW GHEE</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="GIR COW GHEE"
-                            src="https://www.digicrd.in/web-services/products/5fbe2b80c8ad6-1606298496-5fbe2b80c8adb.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-                    <div style="margin-bottom: 5px;">
-                        <br>
-                    </div>
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 2500.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: GIR COW GHEE. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">BUFFALO GHEE</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="BUFFALO GHEE"
-                            src="https://www.digicrd.in/web-services/products/5fbe2b80cbd7f-1606298496-5fbe2b80cbd85.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-                    <div style="margin-bottom: 5px;">
-                        <br>
-                    </div>
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 800.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: BUFFALO GHEE. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">GIR COW CURD</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="GIR COW CURD"
-                            src="https://www.digicrd.in/web-services/products/5fbe2b80d1764-1606298496-5fbe2b80d1769.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-                    <div style="margin-bottom: 5px;">
-                        <br>
-                    </div>
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 120.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: GIR COW CURD. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">BUFFALO CURD</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="BUFFALO CURD"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8b4e4c-1606299816-5fbe30a8b4e53.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 80.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: BUFFALO CURD. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">GIR COW CHAACH</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="GIR COW CHAACH"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8c2e1f-1606299816-5fbe30a8c2e24.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 40.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: GIR COW CHAACH. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">BUFFALO CHAACH</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="BUFFALO CHAACH"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8cc283-1606299816-5fbe30a8cc289.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 30.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: BUFFALO CHAACH. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">GIR COW PANNER</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="GIR COW PANNER"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8d0825-1606299816-5fbe30a8d082a.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 350.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: GIR COW PANNER. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">BUFFALO PANNER</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="BUFFALO PANNER"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8d3ec6-1606299816-5fbe30a8d3ecb.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 280.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: BUFFALO PANNER. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">GIR COW MAKHAN</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="GIR COW MAKHAN"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8d650b-1606299816-5fbe30a8d6512.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 600.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: GIR COW MAKHAN. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">BUFFALO MAKHAN</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="BUFFALO MAKHAN"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8d954f-1606299816-5fbe30a8d9555.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 450.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: BUFFALO MAKHAN. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">GIR COW MAWA</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="GIR COW MAWA"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8dbfbc-1606299816-5fbe30a8dbfc2.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 400.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: GIR COW MAWA. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">BUFFALO MAWA</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="BUFFALO MAWA"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8df21e-1606299816-5fbe30a8df223.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 320.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: BUFFALO MAWA. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">GIR COW SWEETS</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="GIR COW SWEETS"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8e1019-1606299816-5fbe30a8e101e.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 600.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: GIR COW SWEETS. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
-                </div>
-                <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <h3 class="card-title">BUFFALO SWEETS</h3>
-                    <div class="text-center">
-                        <img onclick="openImageModal(this)" alt="BUFFALO SWEETS"
-                            src="https://www.digicrd.in/web-services/products/5fbe30a8e2833-1606299816-5fbe30a8e2839.png"
-                            style="width:100%; margin:auto; margin-bottom: 15px;">
-                    </div>
-
-
-                    <div class="product-enquiry-section" style="margin-bottom:10px">
-
-                        <div class="product-price">
-                            <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 500.00</strong>
-                        </div>
-
-                        <a href="https://wa.me/916376443716?text=Hi, I am interested in your product/service: BUFFALO SWEETS. Please provide more details."
-                            target="blank" class="product-enquiry-btn">Enquiry</a>
-                    </div>
+        
+                    <ul class="inprofile share-buttons">
+                    </ul>
+        
+                    <div class="p-20"></div>
                 </div>
             </div>
+            <div class="section-container" id="about-us-section">
+                <div class="theme-stripe"></div>
+                <div class="trapezoid section-top-trapezoid"></div>
+                <div class="separator"></div>
+                <div class="section-content-wrapper">
+                    <h2 class="section-header">ABOUT US</h2>
+                    <div class="section-header-underline"></div>
+                    <table class="about-us-table">
+                        <tbody>
+                            <tr>
+                                <td class="table-row-label">
+                                    <h3 class="table-row-label-text" style="font-size: 14px;font-weight: 600;">Company Name</h3><b class="table-row-label-separator">:</b>
+                                <td>
+                                <td class="table-row-value">
+                                    STANDUP STARTUPS
+                                <td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-label">
+                                    <h3 class="table-row-label-text" style="font-size: 14px;font-weight: 600;">Nature of business</h3><b
+                                        class="table-row-label-separator">:</b>
+                                <td>
+                                <td class="table-row-value">
+                                    BUSINESS CONSULTANT, GRAPHIC DESIGN , WEB DEVEOPMENT, APP DEVELOPMENT, BRANDING & ADVERTISING, DIGITAL MARKETING 
+                                <td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 style="font-size: 14px;font-weight: 600;">Speciality </h3>
+                    
+                    <p style="margin: 5px 0px;">
+                    <ul style="margin-left: 10px;">
+                        <li>Qualitative products</li>
+                        <li>Affordable pricing</li>
+                        <li>Complete client satisfaction</li>
+                    </ul>
+                    </p>
+                    <h3 style="font-size: 14px;font-weight: 600;">About Us</h3>
+                    <div class="about-us-text">
 
-        </div>
-        <div class="trapezoid section-bottom-trapezoid"></div>
-        <div class="theme-stripe"></div>
-
-    </div>
-
-    <div class="section-container" id="gallery-section">
-        <div class="theme-stripe"></div>
-        <div class="trapezoid section-top-trapezoid"></div>
-        <div class="section-content-wrapper">
-            <h2 class="section-header">GALLERY</h2>
-            <div class="divider"></div>
-            <div class="p-10"></div>
-            <div class="images-container row">
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99d9e73-1605098905-5fabdd99d9e77.png"
-                        style="width:100%">
+                        <p><b>WE HERE AT STANDUP STARTUPS HELPS NEW BUSINESS TO GROW EXPONENTIALLY</b></p>
+                        <p><span style="font-family: Poppins, sans-serif;">We are an organization of passionate, skilled professionals who collaborate with clients and help them set up, recover, mobilize, and grow a business. The digital world is our forte. With a diverse range of services offered, we vow to make it easy for every start-up and business to grow exponentially.</span></p>
+                    </div>
+                    <div class="section-close"></div>
                 </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99da1a2-1605098905-5fabdd99da1a6.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99da381-1605098905-5fabdd99da384.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99da571-1605098905-5fabdd99da574.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99da737-1605098905-5fabdd99da73a.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99da93e-1605098905-5fabdd99da941.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99dab07-1605098905-5fabdd99dab0a.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99dad26-1605098905-5fabdd99dad29.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99daf31-1605098905-5fabdd99daf34.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99db141-1605098905-5fabdd99db144.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99db4bb-1605098905-5fabdd99db4bf.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99db6b0-1605098905-5fabdd99db6b3.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99db86a-1605098905-5fabdd99db86d.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99dba06-1605098905-5fabdd99dba08.png"
-                        style="width:100%">
-                </div>
-                <div class="image-wrapper col-md-4">
-                    <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
-                        src="https://www.digicrd.in/web-services/photo-gallery/5fabdd99dbc22-1605098905-5fabdd99dbc26.png"
-                        style="width:100%">
-                </div>
+                <div class="trapezoid section-bottom-trapezoid"></div>
+                <div class="theme-stripe"></div>
             </div>
-        </div>
-        <div class="trapezoid section-bottom-trapezoid"></div>
-        <div class="theme-stripe"></div>
-    </div>
-    <div class="section-container" id="video-section">
-        <div class="theme-stripe"></div>
-        <div class="trapezoid section-top-trapezoid"></div>
-        <div class="section-content-wrapper">
-            <h2 class="section-header">VIDEO</h2>
-            <div class="divider"></div>
-            <div class="p-10"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="card" style="margin-bottom:20px">
-                        <iframe width="100%" style="min-height:200px; height:auto"
-                            src="https://www.youtube.com/embed/2OY3UIASQeY" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+        
+        
+            <div class="section-container" id="products-services-section">
+                <div class="theme-stripe"></div>
+                <div class="trapezoid section-top-trapezoid"></div>
+                <div class="section-content-wrapper">
+                    <h2 class="section-header">SERVICES</h2>
+                    <div class="p-10"></div>
+                    <div>
+                        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                            <h3 class="card-title">Business Consultant</h3>
+                            <div class="text-center">
+                                <img onclick="openImageModal(this)" alt="GIR COW MILK"
+                                    src="http://www.standupstartups.com/img/new/1.png"
+                                    style="width:100%; margin:auto; margin-bottom: 15px;">
+                            </div>
+        
+                            <div style="margin-bottom: 5px;">
+                                <p><span style="font-family: Poppins, sans-serif;">We consult businesses for their growth and we have our team having experience in consultancy services.</span></p>
+                                <br>
+                            </div>
+        
+                            <div class="product-enquiry-section" style="margin-bottom:10px">
+        
+                                <div class="product-price">
+                                    <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 19999.00</strong>
+                                </div>
+        
+                                <a href="https://wa.me/9188756 62611?text=Hi, I am interested in your product/service: GIR COW MILK. Please provide more details."
+                                    target="blank" class="product-enquiry-btn">Enquiry</a>
+                            </div>
+                        </div>
+                        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                            <h3 class="card-title">Graphics Design</h3>
+                            <div class="text-center">
+                                <img onclick="openImageModal(this)" alt="BUFFALO MILK"
+                                    src="http://www.standupstartups.com/img/new/2.png"
+                                    style="width:100%; margin:auto; margin-bottom: 15px;">
+                            </div>
+                            <div style="margin-bottom: 5px;">
+                                <p><span style="font-family: Poppins, sans-serif;">Our service has a highly quality at the affordable cost, we provide all graphics like:-banner, flyers, business cards etc.</span></p>
+                                <br>
+                            </div>
+        
+                            <div class="product-enquiry-section" style="margin-bottom:10px">
+        
+                                <div class="product-price">
+                                    <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 999.00</strong>
+                                </div>
+        
+                                <a href="https://wa.me/9188756 62611?text=Hi, I am interested in your product/service: BUFFALO MILK. Please provide more details."
+                                    target="blank" class="product-enquiry-btn">Enquiry</a>
+                            </div>
+                        </div>
+                        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                            <h3 class="card-title">Web Development</h3>
+                            <div class="text-center">
+                                <img onclick="openImageModal(this)" alt="GIR COW GHEE"
+                                    src="http://www.standupstartups.com/img/new/3.png"
+                                    style="width:100%; margin:auto; margin-bottom: 15px;">
+                            </div>
+        
+                            <div style="margin-bottom: 5px;">
+                                <p><span style="font-family: Poppins, sans-serif;">We provide web development and maintenance services along with app development including high GUI and Ux.</span></p>
+                                <br>
+                            </div>
+        
+                            <div class="product-enquiry-section" style="margin-bottom:10px">
+        
+                                <div class="product-price">
+                                    <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 29999.00</strong>
+                                </div>
+        
+                                <a href="https://wa.me/9188756 62611?text=Hi, I am interested in your product/service: GIR COW GHEE. Please provide more details."
+                                    target="blank" class="product-enquiry-btn">Enquiry</a>
+                            </div>
+                        </div>
+                        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                            <h3 class="card-title">App Development</h3>
+                            <div class="text-center">
+                                <img onclick="openImageModal(this)" alt="BUFFALO GHEE"
+                                    src="http://www.standupstartups.com/img/new/4.png"
+                                    style="width:100%; margin:auto; margin-bottom: 15px;">
+                            </div>
+        
+                            <div style="margin-bottom: 5px;">
+                                <p><span style="font-family: Poppins, sans-serif;">We provide web development and maintenance services along with app development including high GUI and Ux.</span></p>
+                                <br>
+                            </div>
+        
+                            <div class="product-enquiry-section" style="margin-bottom:10px">
+        
+                                <div class="product-price">
+                                    <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 29999.00</strong>
+                                </div>
+        
+                                <a href="https://wa.me/9188756 62611?text=Hi, I am interested in your product/service: BUFFALO GHEE. Please provide more details."
+                                    target="blank" class="product-enquiry-btn">Enquiry</a>
+                            </div>
+                        </div>
+                        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                            <h3 class="card-title">Branding and Advertising</h3>
+                            <div class="text-center">
+                                <img onclick="openImageModal(this)" alt="GIR COW CURD"
+                                    src="http://www.standupstartups.com/img/new/5.png"
+                                    style="width:100%; margin:auto; margin-bottom: 15px;">
+                            </div>
+        
+                            <div style="margin-bottom: 5px;">
+                                <p><span style="font-family: Poppins, sans-serif;">Branding is interlinked with business growth, and we provide a best customer experience in branding their companies.</span></p>
+                                <br>
+                            </div>
+        
+                            <div class="product-enquiry-section" style="margin-bottom:10px">
+        
+                                <div class="product-price">
+                                    <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 9999.00</strong>
+                                </div>
+        
+                                <a href="https://wa.me/9188756 62611?text=Hi, I am interested in your product/service: GIR COW CURD. Please provide more details."
+                                    target="blank" class="product-enquiry-btn">Enquiry</a>
+                            </div>
+                        </div>
+                        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                            <h3 class="card-title">Digital Marketing</h3>
+                            <div class="text-center">
+                                <img onclick="openImageModal(this)" alt="BUFFALO CURD"
+                                    src="http://www.standupstartups.com/img/new/6.png"
+                                    style="width:100%; margin:auto; margin-bottom: 15px;">
+                            </div>
+                            <div style="margin-bottom: 5px;">
+                                <p><span style="font-family: Poppins, sans-serif;">Our Company provides digital marketing solutions to achieve targeted goals, we provide marketing services at affordable prices.</span></p>
+                                <br>
+                            </div>
+        
+                            <div class="product-enquiry-section" style="margin-bottom:10px">
+        
+                                <div class="product-price">
+                                    <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 9999.00</strong>
+                                </div>
+        
+                                <a href="https://wa.me/9188756 62611?text=Hi, I am interested in your product/service: BUFFALO CURD. Please provide more details."
+                                    target="blank" class="product-enquiry-btn">Enquiry</a>
+                            </div>
+                        </div>
+                        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                            <h3 class="card-title">Legal Business Framework</h3>
+                            <div class="text-center">
+                                <img onclick="openImageModal(this)" alt="GIR COW CHAACH"
+                                    src="http://www.standupstartups.com/img/mob-app.png"
+                                    style="width:100%; margin:auto; margin-bottom: 15px;">
+                            </div>
+        
+                            <div style="margin-bottom: 5px;">
+                                <p><span style="font-family: Poppins, sans-serif;">We help maneuver through the legalities of a business and set up a firm legal framework.</span></p>
+                                <br>
+                            </div>
+                            <div class="product-enquiry-section" style="margin-bottom:10px">
+        
+                                <div class="product-price">
+                                    <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 999.00</strong>
+                                </div>
+        
+                                <a href="https://wa.me/9188756 62611??text=Hi, I am interested in your product/service: GIR COW CHAACH. Please provide more details."
+                                    target="blank" class="product-enquiry-btn">Enquiry</a>
+                            </div>
+                        </div>
+                        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                            <h3 class="card-title">Business Plan</h3>
+                            <div class="text-center">
+                                <img onclick="openImageModal(this)" alt="BUFFALO CHAACH"
+                                    src="http://www.standupstartups.com/img/busi-plan.png"
+                                    style="width:100%; margin:auto; margin-bottom: 15px;">
+                            </div>
+                            <div style="margin-bottom: 5px;">
+                                <p><span style="font-family: Poppins, sans-serif;">Business Plan: We firstly we understand the market and its working and then we make a perfect plan for our clients.</span></p>
+                                <br>
+                            </div>
+        
+                            <div class="product-enquiry-section" style="margin-bottom:10px">
+        
+                                <div class="product-price">
+                                    <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 999.00</strong>
+                                </div>
+        
+                                <a href="https://wa.me/9188756 62611?text=Hi, I am interested in your product/service: BUFFALO CHAACH. Please provide more details."
+                                    target="blank" class="product-enquiry-btn">Enquiry</a>
+                            </div>
+                        </div>
+                        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                            <h3 class="card-title">Pitch Deck</h3>
+                            <div class="text-center">
+                                <img onclick="openImageModal(this)" alt="GIR COW PANNER"
+                                    src="http://www.standupstartups.com/img/pitch-deck.png"
+                                    style="width:100%; margin:auto; margin-bottom: 15px;">
+                            </div>
+                            <div style="margin-bottom: 5px;">
+                                <p><span style="font-family: Poppins, sans-serif;">Pitch deck is the service that improve your presentation content, that attracts peoples and our team is best in pitch deck.</span></p>
+                                <br>
+                            </div>
+        
+                            <div class="product-enquiry-section" style="margin-bottom:10px">
+        
+                                <div class="product-price">
+                                    <strong><i class="fas fa-rupee-sign" aria-hidden="true"></i> MRP- 350.00</strong>
+                                </div>
+        
+                                <a href="https://wa.me/9188756 62611?text=Hi, I am interested in your product/service: GIR COW PANNER. Please provide more details."
+                                    target="blank" class="product-enquiry-btn">Enquiry</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+                </div>
+                <div class="trapezoid section-bottom-trapezoid"></div>
+                <div class="theme-stripe"></div>
+        
+            </div>
+        
+            <div class="section-container" id="gallery-section">
+                <div class="theme-stripe"></div>
+                <div class="trapezoid section-top-trapezoid"></div>
+                <div class="section-content-wrapper">
+                    <h2 class="section-header">GALLERY</h2>
+                    <div class="divider"></div>
+                    <div class="p-10"></div>
+                    <div class="images-container row">
+                        <div class="image-wrapper col-md-4">
+                            <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
+                                src="http://www.standupstartups.com/img/new/1.png"
+                                style="width:100%">
+                        </div>
+                        <div class="image-wrapper col-md-4">
+                            <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
+                                src="http://www.standupstartups.com/img/new/2.png"
+                                style="width:100%">
+                        </div>
+                        <div class="image-wrapper col-md-4">
+                            <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
+                                src="http://www.standupstartups.com/img/new/3.png"
+                                style="width:100%">
+                        </div>
+                        <div class="image-wrapper col-md-4">
+                            <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
+                                src="http://www.standupstartups.com/img/new/4.png"
+                                style="width:100%">
+                        </div>
+                        <div class="image-wrapper col-md-4">
+                            <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
+                                src="http://www.standupstartups.com/img/new/5.png"
+                                style="width:100%">
+                        </div>
+                        <div class="image-wrapper col-md-4">
+                            <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
+                                src="http://www.standupstartups.com/img/new/6.png"
+                                style="width:100%">
+                        </div>
+                        <div class="image-wrapper col-md-4">
+                            <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
+                                src="http://www.standupstartups.com/img/mob-app.png"
+                                style="width:100%">
+                        </div>
+                        <div class="image-wrapper col-md-4">
+                            <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
+                                src="http://www.standupstartups.com/img/busi-plan.png"
+                                style="width:100%">
+                        </div>
+                        <div class="image-wrapper col-md-4">
+                            <img onclick="openImageModal(this)" alt="WE THE FARMER DAIRY"
+                                src="http://www.standupstartups.com/img/pitch-deck.png"
+                                style="width:100%">
+                        </div>
                     </div>
                 </div>
+                <div class="trapezoid section-bottom-trapezoid"></div>
+                <div class="theme-stripe"></div>
             </div>
-        </div>
-        <div class="trapezoid section-bottom-trapezoid"></div>
-        <div class="theme-stripe"></div>
-    </div>
-    <div class="section-container " id="payment-options-section">
-        <div class="theme-stripe"></div>
-        <div class=" trapezoid section-top-trapezoid"></div>
-        <h2 class="section-header">PAYMENT</h2>
-        <table class="about-us-table" style="margin: 10px 20px;">
-            <tbody>
-                <tr>
-                    <td class="table-row-label">
-                        <h2 class="table-row-label-text">Paytm</h3><b class="table-row-label-separator">:</b>
-                    </td>
-                    <td>
-                    </td>
-                    <td class="table-row-value">
-                        9920051881 </td>
-                    <td>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="table-row-value" colspan="3">
-                        <img src="https://www.digicrd.in/web-services/payment-options/5f43c0191e0f9-1598275609-5f43c0191e0fc.png"
-                            style='width:100%;'>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-        <div class="full-divider"></div>
-        <table class="about-us-table" style="margin: 10px 20px;">
-            <tbody>
-                <tr>
-                    <td class="table-row-label">
-                        <h2 class="table-row-label-text">Google Pay</h3><b class="table-row-label-separator">:</b>
-                    </td>
-                    <td>
-                    </td>
-                    <td class="table-row-value">
-                        9920051881 </td>
-                    <td>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="table-row-value" colspan="3">
-                        <img src="https://www.digicrd.in/web-services/payment-options/5f43c0191f511-1598275609-5f43c0191f516.png"
-                            style='width:100%;'>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-        <div class="full-divider"></div>
-        <div style="margin: 20px 20px;">
-            <h3>Account Details</h3>
-            <table class="about-us-table ">
-                <tbody>
-                    <tr>
-                        <td class="table-row-label">
-                            <h3 class="table-row-label-text">Bank Name</h3><b class="table-row-label-separator">:</b>
-                        </td>
-                        <td>
-                        </td>
-                        <td class="table-row-value">
-                            ICICI BANK LTD, I. C. Colony, Borivali (West), Mumbai 400 103. </td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="table-row-label">
-                            <h3 class="table-row-label-text">IFSC Code</h3><b class="table-row-label-separator">:</b>
-                        </td>
-                        <td>
-                        </td>
-                        <td class="table-row-value">
-                            ICIC0001215 </td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="table-row-label">
-                            <h3 class="table-row-label-text">Account Holder Name</h3><b
-                                class="table-row-label-separator">:</b>
-                        </td>
-                        <td>
-                        </td>
-                        <td class="table-row-value">
-                            Skyline Charters </td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="table-row-label">
-                            <h3 class="table-row-label-text">Account Number</h3><b
-                                class="table-row-label-separator">:</b>
-                        </td>
-                        <td>
-                        </td>
-                        <td class="table-row-value">
-                            121505500187 </td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="table-row-label">
-                            <h3 class="table-row-label-text">Account Type</h3><b class="table-row-label-separator">:</b>
-                        </td>
-                        <td>
-                        </td>
-                        <td class="table-row-value">
-                            Current Account </td>
-                        <td>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    </div>
-    <div class="trapezoid section-bottom-trapezoid"></div>
-    <div class="theme-stripe"></div>
-    </div>
-    <div class="section-container" id="feedback-section">
-        <div class="theme-stripe"></div>
-        <div class="trapezoid section-top-trapezoid"></div>
-        <div class="section-content-wrapper">
-            <h2 class="section-header">FEEDBACK</h2>
-            <div class="avgFeedback">
-                <div style="float:left; font-size:18px; margin-top:5px;"><b>Total : </b>1 Feedbacks</div>
-                <div style="float:right;"><span class="gl-star-rating-stars s50"><span data-value="1"
-                            data-text="Terrible"></span><span data-value="2" data-text="Poor"></span><span
-                            data-value="3" data-text="Average"></span><span data-value="4"
-                            data-text="Very Good"></span><span data-value="5" data-text="Excellent"></span></span></div>
-                <div style="clear:both"></div>
+            <div class="section-container" id="video-section">
+                <div class="theme-stripe"></div>
+                <div class="trapezoid section-top-trapezoid"></div>
+                <div class="section-content-wrapper">
+                    <h2 class="section-header">VIDEO</h2>
+                    <div class="divider"></div>
+                    <div class="p-10"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="card" style="margin-bottom:20px">
+                                <iframe width="100%" style="min-height:200px; height:auto"
+                                    src="https://www.youtube.com/watch?v=0wjwkJCN2Rk" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trapezoid section-bottom-trapezoid"></div>
+                <div class="theme-stripe"></div>
             </div>
-            <hr>
-            <div class="feedback-list">
-                <div class="feedback-wrapper">
-                    <span class="feedback-name-wrapper"><span class="feedback-name">Dharmendra Singh</span> on Nov-20,
-                        2020</span>
-                    <div><span class="gl-star-rating-stars s50"><span data-value="1" data-text="Terrible"></span><span
-                                data-value="2" data-text="Poor"></span><span data-value="3"
-                                data-text="Average"></span><span data-value="4" data-text="Very Good"></span><span
-                                data-value="5" data-text="Excellent"></span></span></div>
-                    <div>Online service are excellent</div>
-                    <hr />
+            <div class="section-container " id="payment-options-section">
+                <div class="theme-stripe"></div>
+                <div class=" trapezoid section-top-trapezoid"></div>
+                <h2 class="section-header">PAYMENT</h2>
+                <table class="about-us-table" style="margin: 10px 20px;">
+                    <tbody>
+                        <tr>
+                            <td class="table-row-label">
+                                <h2 class="table-row-label-text">Paytm</h3><b class="table-row-label-separator">:</b>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="table-row-value">
+                                9920051881 </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-row-value" colspan="3">
+                                <img src="https://www.digicrd.in/web-services/payment-options/5f43c0191e0f9-1598275609-5f43c0191e0fc.png"
+                                    style='width:100%;'>
+                            </td>
+                        </tr>
+        
+                    </tbody>
+                </table>
+                <div class="full-divider"></div>
+                <table class="about-us-table" style="margin: 10px 20px;">
+                    <tbody>
+                        <tr>
+                            <td class="table-row-label">
+                                <h2 class="table-row-label-text">Google Pay</h3><b class="table-row-label-separator">:</b>
+                            </td>
+                            <td>
+                            </td>
+                            <td class="table-row-value">
+                                9920051881 </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-row-value" colspan="3">
+                                <img src="https://www.digicrd.in/web-services/payment-options/5f43c0191f511-1598275609-5f43c0191f516.png"
+                                    style='width:100%;'>
+                            </td>
+                        </tr>
+        
+                    </tbody>
+                </table>
+                <div class="full-divider"></div>
+                <div style="margin: 20px 20px;">
+                    <h3>Account Details</h3>
+                    <table class="about-us-table ">
+                        <tbody>
+                            <tr>
+                                <td class="table-row-label">
+                                    <h3 class="table-row-label-text">Bank Name</h3><b class="table-row-label-separator">:</b>
+                                </td>
+                                <td>
+                                </td>
+                                <td class="table-row-value">
+                                    ICICI BANK LTD, I. C. Colony, Borivali (West), Mumbai 400 103. </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-label">
+                                    <h3 class="table-row-label-text">IFSC Code</h3><b class="table-row-label-separator">:</b>
+                                </td>
+                                <td>
+                                </td>
+                                <td class="table-row-value">
+                                    ICIC0001215 </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-label">
+                                    <h3 class="table-row-label-text">Account Holder Name</h3><b
+                                        class="table-row-label-separator">:</b>
+                                </td>
+                                <td>
+                                </td>
+                                <td class="table-row-value">
+                                    Skyline Charters </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-label">
+                                    <h3 class="table-row-label-text">Account Number</h3><b
+                                        class="table-row-label-separator">:</b>
+                                </td>
+                                <td>
+                                </td>
+                                <td class="table-row-value">
+                                    121505500187 </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-label">
+                                    <h3 class="table-row-label-text">Account Type</h3><b class="table-row-label-separator">:</b>
+                                </td>
+                                <td>
+                                </td>
+                                <td class="table-row-value">
+                                    Current Account </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-
-
-            <form class="feedback-form card" data-parsley-validate method="post" id="feedback-form">
-                <div class="feedback-form-heading">Give Feedback</div>
-                <select class="star-rating" data-parsley-trigger="change" required id="rating" name="rating">
-                    <option value="">Select a rating</option>
-                    <option value="5">Excellent</option>
-                    <option value="4">Very Good</option>
-                    <option value="3">Average</option>
-                    <option value="2">Poor</option>
-                    <option value="1">Terrible</option>
-                </select>
-                <input type="text" required name="feedbackName" id="feedbackName" placeholder="Enter Full Name"
-                    pattern="[A-Za-z\s]+" />
-                <textarea name="feedback" required id="feedback" placeholder="Enter your feedback"></textarea>
-                <input type='hidden' id='companyUrl' value="we-the-farmer-dairy" />
-                <!-- Message:<br/> -->
-                <input type="submit" id='giveFeedback' value="Give Feedback" />
-            </form>
-        </div>
-        <div class="trapezoid section-bottom-trapezoid"></div>
-        <div class="theme-stripe"></div>
-    </div>
-    <div class="section-container" id="enquiry-section">
-        <div class="theme-stripe"></div>
-        <div class="trapezoid section-top-trapezoid"></div>
-        <div class="section-content-wrapper">
-            <h2 class="section-header">ENQUIRY</h2>
-            <form data-parsley-validate method="post" class="enquiry-form" id="enquiry-form">
-                <!-- Full Name:<br/> -->
-                <input type="text" name="enquiryName" data-parsley-trigger="change" id="enquiryName"
-                    placeholder="Enter Full Name" pattern="[a-zA-Z ]*$" required /><br />
-                <!-- <div class="flex"> -->
-                <div class="enquiry-phoneNumber">
-                    <!-- Phone Number:<br/> -->
-                    <input type="text" data-parsley-length-message="Contact should have (4-10) digits."
-                        data-parsley-type-message="Contact should have only digits." data-parsley-type="number"
-                        data-parsley-length="[4, 10]" name="phoneNumber" id="phoneNumber" required
-                        placeholder="Enter Phone Number" /><br />
+            <div class="section-container" id="feedback-section">
+                <div class="theme-stripe"></div>
+                <div class="trapezoid section-top-trapezoid"></div>
+                <div class="section-content-wrapper">
+                    <h2 class="section-header">FEEDBACK</h2>
+                    <div class="avgFeedback">
+                        <div style="float:left; font-size:18px; margin-top:5px;"><b>Total : </b>1 Feedbacks</div>
+                        <div style="float:right;"><span class="gl-star-rating-stars s50"><span data-value="1"
+                                    data-text="Terrible"></span><span data-value="2" data-text="Poor"></span><span
+                                    data-value="3" data-text="Average"></span><span data-value="4"
+                                    data-text="Very Good"></span><span data-value="5" data-text="Excellent"></span></span></div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <hr>
+                    <div class="feedback-list">
+                        <div class="feedback-wrapper">
+                            <span class="feedback-name-wrapper"><span class="feedback-name">Dharmendra Singh</span> on Nov-20,
+                                2020</span>
+                            <div><span class="gl-star-rating-stars s50"><span data-value="1" data-text="Terrible"></span><span
+                                        data-value="2" data-text="Poor"></span><span data-value="3"
+                                        data-text="Average"></span><span data-value="4" data-text="Very Good"></span><span
+                                        data-value="5" data-text="Excellent"></span></span></div>
+                            <div>Online service are excellent</div>
+                            <hr />
+                        </div>
+                    </div>
+        
+        
+                    <form class="feedback-form card" data-parsley-validate method="post" id="feedback-form">
+                        <div class="feedback-form-heading">Give Feedback</div>
+                        <select class="star-rating" data-parsley-trigger="change" required id="rating" name="rating">
+                            <option value="">Select a rating</option>
+                            <option value="5">Excellent</option>
+                            <option value="4">Very Good</option>
+                            <option value="3">Average</option>
+                            <option value="2">Poor</option>
+                            <option value="1">Terrible</option>
+                        </select>
+                        <input type="text" required name="feedbackName" id="feedbackName" placeholder="Enter Full Name"
+                            pattern="[A-Za-z\s]+" />
+                        <textarea name="feedback" required id="feedback" placeholder="Enter your feedback"></textarea>
+                        <input type='hidden' id='companyUrl' value="we-the-farmer-dairy" />
+                        <!-- Message:<br/> -->
+                        <input type="submit" id='giveFeedback' value="Give Feedback" />
+                    </form>
                 </div>
-                <div class="enquiry-email">
-                    <!-- Email:<br/> -->
-                    <input type="email" name="email" id="email" data-parsley-trigger="change"
-                        placeholder="Enter Email" /><br />
+                <div class="trapezoid section-bottom-trapezoid"></div>
+                <div class="theme-stripe"></div>
+            </div>
+            <div class="section-container" id="enquiry-section">
+                <div class="theme-stripe"></div>
+                <div class="trapezoid section-top-trapezoid"></div>
+                <div class="section-content-wrapper">
+                    <h2 class="section-header">ENQUIRY</h2>
+                    <form data-parsley-validate method="post" class="enquiry-form" id="enquiry-form">
+                        <!-- Full Name:<br/> -->
+                        <input type="text" name="enquiryName" data-parsley-trigger="change" id="enquiryName"
+                            placeholder="Enter Full Name" pattern="[a-zA-Z ]*$" required /><br />
+                        <!-- <div class="flex"> -->
+                        <div class="enquiry-phoneNumber">
+                            <!-- Phone Number:<br/> -->
+                            <input type="text" data-parsley-length-message="Contact should have (4-10) digits."
+                                data-parsley-type-message="Contact should have only digits." data-parsley-type="number"
+                                data-parsley-length="[4, 10]" name="phoneNumber" id="phoneNumber" required
+                                placeholder="Enter Phone Number" /><br />
+                        </div>
+                        <div class="enquiry-email">
+                            <!-- Email:<br/> -->
+                            <input type="email" name="email" id="email" data-parsley-trigger="change"
+                                placeholder="Enter Email" /><br />
+                        </div>
+                        <!-- </div> -->
+                        <!-- Message:<br/> -->
+                        <textarea name="message" id="message" required placeholder="Enter Message"></textarea><br />
+                        <input type='hidden' id='companyEmail' value="wtfstores@gmail.com" />
+                        <input type="submit" id="inquiry-send" value="Send" />
+                    </form>
+                    <!-- onclick="sendEnquiry(this, '')" -->
                 </div>
-                <!-- </div> -->
-                <!-- Message:<br/> -->
-                <textarea name="message" id="message" required placeholder="Enter Message"></textarea><br />
-                <input type='hidden' id='companyEmail' value="wtfstores@gmail.com" />
-                <input type="submit" id="inquiry-send" value="Send" />
-            </form>
-            <!-- onclick="sendEnquiry(this, '')" -->
-        </div>
-        <div class="trapezoid section-bottom-trapezoid"></div>
-        <div class="theme-stripe"></div>
-    </div>
+                <div class="trapezoid section-bottom-trapezoid"></div>
+                <div class="theme-stripe"></div>
+            </div>
+        
+            <div class="copyright-wrapper">
+                <div class="copyright-wrapper-inner">
+                    © 2021 <a href="https://www.standupstartups.com/" target="_blank"><b>standupstartups.com</b></a>.
+                </div>
+            </div>
+            <div class="container-fluid">
+                <header class="header">
+                    <div class="container">
+                        <nav class="bottom-nav">
+                            <div class="bottom-nav-item active">
+                                <a href="#home-section">
+                                    <div class="bottom-nav-link">
+                                        <i class="material-icons">home</i>
+                                        <span>Home</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bottom-nav-item">
+                                <a href="#about-us-section">
+                                    <div class="bottom-nav-link">
+                                        <i class="material-icons"><span class="material-icons">
+                                                account_circle
+                                            </span></i>
+                                        <span>About Us</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bottom-nav-item">
+                                <a href="#products-services-section">
+                                    <div class="bottom-nav-link">
+                                        <i class="material-icons">collections</i>
+                                        <span>Services</span>
+                                    </div>
+                                </a>
+                            </div>
 
-    <div class="copyright-wrapper">
-        <div class="copyright-wrapper-inner">
-            © 2021 <a href="https://www.digicrd.in/" target="_blank"><b>digicrd.in</b></a>.
+                            <div class="bottom-nav-item">
+                                <a href="#gallery-section">
+                                    <div class="bottom-nav-link">
+                                        <i class="material-icons">account_balance</i>
+                                        <span>Gallery</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="bottom-nav-item">
+                                <a href="#video-section">
+                                    <div class="bottom-nav-link">
+                                        <i class="material-icons">account_balance</i>
+                                        <span>Video</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="bottom-nav-item">
+                                <a href="#payment-options-section">
+                                    <div class="bottom-nav-link">
+                                        <i class="material-icons">account_balance</i>
+                                        <span>Payment</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="bottom-nav-item">
+                                <a href="#feedback-section">
+                                    <div class="bottom-nav-link">
+                                        <i class="material-icons">question_answer</i>
+                                        <span>Feedback</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bottom-nav-item">
+                                <a href="#enquiry-section">
+                                    <div class="bottom-nav-link">
+                                        <i class="material-icons">question_answer</i>
+                                        <span>Enquiry</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+            </div>
         </div>
     </div>
-    <!-- Footer Menu -->
-    <div class="footer">
-        <ul class="footer-menu">
-            <li>
-                <a class="footer-menu-link" href="#home-section">
-                    <i class="footer-menu-icon fas fa-home"></i>
-                    <div class="footer-menu-text">HOME</div>
-                </a>
-            </li>
-            <li>
-                <a class="footer-menu-link" href="#about-us-section">
-                    <i class="footer-menu-icon fas fa-users"></i>
-                    <div class="footer-menu-text">ABOUT US</div>
-                </a>
-            </li>
-            <li>
-                <a class="footer-menu-link" href="#products-services-section">
-                    <i class="footer-menu-icon fas fa-box-open"></i>
-                    <div class="footer-menu-text">PRODUCTS</div>
-                </a>
-            </li>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- select country scripts -->
 
-            <li>
-                <a class="footer-menu-link" href="#gallery-section">
-                    <i class="footer-menu-icon fas fa-images"></i>
-                    <div class="footer-menu-text">GALLERY</div>
-                </a>
-            </li>
-            <li>
-                <a class="footer-menu-link" href="#video-section">
-                    <i class="footer-menu-icon fas fa-video"></i>
-                    <div class="footer-menu-text">VIDEO</div>
-                </a>
-            </li>
-            <li>
-                <a class="footer-menu-link" href="#payment-options-section">
-                    <i class="footer-menu-icon fas fa-money-bill-wave"></i>
-                    <div class="footer-menu-text">PAYMENT</div>
-                </a>
-            </li>
-            <li>
-                <a class="footer-menu-link" href="#feedback-section">
-                    <i class="footer-menu-icon fas fa-star"></i>
-                    <div class="footer-menu-text">FEEDBACK</div>
-                </a>
-            </li>
-            <li>
-                <a class="footer-menu-link" href="#enquiry-section">
-                    <i class="footer-menu-icon fas fa-comment-alt"></i>
-                    <div class="footer-menu-text">ENQUIRY</div>
-                </a>
-            </li>
-        </ul>
-    </div>
     <script>
-        // Place this code in the head section of your HTML file 
-        (function (r, d, s) {
-            r.loadSkypeWebSdkAsync = r.loadSkypeWebSdkAsync || function (p) {
-                var js, sjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(p.id)) { return; }
-                js = d.createElement(s);
-                js.id = p.id;
-                js.src = p.scriptToLoad;
-                js.onload = p.callback
-                sjs.parentNode.insertBefore(js, sjs);
-            };
-            var p = {
-                scriptToLoad: 'https://swx.cdn.skype.com/shared/v/latest/skypewebsdk.js',
-                id: 'skype_web_sdk'
-            };
-            r.loadSkypeWebSdkAsync(p);
-        })(window, document, 'script');
+        var navItems = document.querySelectorAll(".bottom-nav-item");
+
+        navItems.forEach(function (e, i) {
+            e.addEventListener("click", function (e) {
+                navItems.forEach(function (e2, i2) {
+                    e2.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        });
     </script>
+    <script>
+        var telInput = $("#phone"),
+            errorMsg = $("#error-msg"),
+            validMsg = $("#valid-msg");
+
+        // initialise plugin
+        telInput.intlTelInput({
+
+            allowExtensions: true,
+            formatOnDisplay: true,
+            autoFormat: true,
+            autoHideDialCode: true,
+            autoPlaceholder: true,
+            defaultCountry: "auto",
+            ipinfoToken: "yolo",
+
+            nationalMode: false,
+            numberType: "MOBILE",
+            //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            preferredCountries: ['sa', 'ae', 'qa', 'om', 'bh', 'kw', 'ma'],
+            preventInvalidNumbers: true,
+            separateDialCode: true,
+            initialCountry: "auto",
+            geoIpLookup: function (callback) {
+                $.get("http://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    callback(countryCode);
+                });
+            },
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"
+        });
+
+        var reset = function () {
+            telInput.removeClass("error");
+            errorMsg.addClass("hide");
+            validMsg.addClass("hide");
+        };
+
+        // on blur: validate
+        telInput.blur(function () {
+            reset();
+            if ($.trim(telInput.val())) {
+                if (telInput.intlTelInput("isValidNumber")) {
+                    validMsg.removeClass("hide");
+                } else {
+                    telInput.addClass("error");
+                    errorMsg.removeClass("hide");
+                }
+            }
+        });
+
+        // on keyup / change flag: reset
+        telInput.on("keyup change", reset);
 
 
 
-    <!-- The image Modal -->
-
-
-
-
-    <div id="imageModal" class="modal">
-        <span class="close" id="imageModalClose">&times;</span>
-        <img class="modal-content fadeIn" id="img01">
-        <div id="caption"></div>
-    </div>
-    <!-- The share Modal -->
-    <div id="shareModal" class="modal share-modal">
-        <div class="share-form fadeInUpBig">
-            <div class="share-form-header">
-                <h3 class="share-form-header-text">Share Profile</h3>
-                <span class="close" id="shareModalClose">&times;</span>
-            </div>
-            <div class="share-form-buttons-container">
-                <p>Share Digital vCard in your network.</p>
-                <div class="share-buttons-heading">
-                    <img src="https://www.digicrd.in/assets/img/tild-arrow.svg" class="share-buttons-arrow">
-                    <div class="share-buttons-heading-text">Share Digital vCard</div>
-                </div>
-                <ul class="share-buttons">
-                    <li class="share-button">
-                        <a href="javascript:;" onclick="handleDirectWhatsappShare(this)">
-                            <i class="share-button-whatsapp fab fa-whatsapp"></i>
-                        </a>
-                    </li>
-                    <li class="share-button">
-                        <a target="_blank" href="sms:?body=https://www.digicrd.in/we-the-farmer-dairy">
-                            <i class="share-button-sms fas fa-comment-dots"></i>
-                        </a>
-                    </li>
-                    <li class="share-button">
-                        <a target="_blank"
-                            href="https://www.facebook.com/sharer/sharer.php?u=https://www.digicrd.in/we-the-farmer-dairy&amp;src=sdkpreparse"
-                            class="fb-xfbml-parse-ignore">
-                            <i class="share-button-facebook fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="share-button">
-                        <a target="_blank"
-                            href="https://twitter.com/intent/tweet?text=https://www.digicrd.in/we-the-farmer-dairy"
-                            data-size="large">
-                            <i class="share-button-twitter fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="share-button">
-                        <i class="share-button-skype fab fa-skype skype-share"
-                            onKeydown='skypeShareKeyDownHandler(event)'
-                            data-href='https://www.digicrd.in/we-the-farmer-dairy' data-lang='eng'
-                            data-text='WE THE FARMER DAIRY'></i>
-                    </li>
-                    <!--<li class="share-button">-->
-                    <!--    <i class="share-button-pinterest fab fa-pinterest-p"></i>-->
-                    <!--</li>-->
-                    <!--<li class="share-button">-->
-                    <!--    <i class="share-button-linkedin fab fa-linkedin-in"></i>-->
-                    <!--</li>-->
-                    <li class="share-button">
-                        <i class="share-button-mail fas fa-envelope"
-                            href="https://mail.google.com/mail/?view=cm&to=info@go-digicard.com&su=WE THE FARMER DAIRY : Go Digital Profile&body=My Go Digital Profile, Please,Open link for more information. https://www.digicrd.in/we-the-farmer-dairy"></i>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
     <script src="https://www.digicrd.in/assets/templates/common/js/star-rating.js"></script>
     <script src="https://www.digicrd.in/assets/js/jquery.min.js"></script>
-    <script src="https://www.digicrd.in/assets/js/parsley.min.js"></script>
-    <script src="https://www.digicrd.in/assets/js/form-action.js"></script>
     <script src="https://www.digicrd.in/alert-popup/jquery-confirm.js"></script>
-    <script src="https://www.digicrd.in/assets/templates/common/js/script.js"></script>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/24ee31a944.js" crossorigin="anonymous"></script>
-    <script src="https://www.digicrd.in/assets/js/login-register.js"></script>
-
-    <!-- Begin emoji-picker JavaScript -->
-    <!--<script src="https://www.digicrd.in/assets/templates/common/lib/js/config.js"></script>
-    <script src="https://www.digicrd.in/assets/templates/common/lib/js/util.js"></script>
-    <script src="https://www.digicrd.in/assets/templates/common/lib/js/jquery.emojiarea.js"></script>
-    <script src="https://www.digicrd.in/assets/templates/common/lib/js/emoji-picker.js"></script>-->
-    <!-- End emoji-picker JavaScript -->
-
-    <script>
-        jQuery(function () {
-            // Initializes and creates emoji set from sprite sheet
-            // window.emojiPicker = new EmojiPicker({
-            //   emojiable_selector: '[data-emojiable=true]',
-            //   assetsPath: 'https://www.digicrd.in/assets/templates/common/lib/img',
-            //   popupButtonClasses: 'fa fa-smile-o'
-            // });
-            // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
-            // You may want to delay this step if you have dynamically created input fields that appear later in the loading process
-            // It can be called as many times as necessary; previously converted input fields will not be converted again
-            // window.emojiPicker.discover();
-        });
-    </script>
-
-
-    <script>
-        // if ('serviceWorker' in navigator) {
-        //     navigator.serviceWorker.register('/service-worker.js').then(
-        //         () => {
-        //             console.log('Service Worker Registered');
-        //         },
-        //     ).error;
-        // }
-
-        if ('serviceWorker' in navigator) {
-            // Register a service worker hosted at the root of the
-            // site using the default scope.
-            navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
-                console.log('Service worker registration succeeded:', registration);
-            }, /*catch*/ function (error) {
-                console.log('Service worker registration failed:', error);
-            });
-        } else {
-            console.log('Service workers are not supported.');
-        }
-
-        window.addEventListener('DOMContentLoaded', () => {
-            let deferredPrompt;
-            const saveBtn = document.querySelector('.save-card-button');
-            saveBtn.style.display = 'none';
-
-            window.addEventListener('beforeinstallprompt', (e) => {
-                // Prevent Chrome 67 and earlier from automatically showing the prompt
-                e.preventDefault();
-                // Stash the event so it can be triggered later.
-                deferredPrompt = e;
-                // Update UI to notify the user they can add to home screen
-                saveBtn.style.display = 'block';
-
-                saveBtn.addEventListener('click', (e) => {
-                    // hide our user interface that shows our A2HS button
-                    saveBtn.style.display = 'none';
-                    // Show the prompt
-                    deferredPrompt.prompt();
-                    // Wait for the user to respond to the prompt
-                    deferredPrompt.userChoice.then((choiceResult) => {
-                        if (choiceResult.outcome === 'accepted') {
-                            console.log('User accepted the A2HS prompt');
-                        } else {
-                            console.log('User dismissed the A2HS prompt');
-                        }
-                        deferredPrompt = null;
-                    });
-                });
-            });
-        });
-    </script>
-
-
+    
 </body>
 
 </html>
