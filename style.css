@@ -728,8 +728,8 @@ text-align: center;
 
 /* Copyright css start */
 .copyright-wrapper {
-  color: rgba(0,0,0, 0.8);
-  background-color: #ffffff;
+  color: white;
+  background-color: #020e41;
   font-size: 14px;
   line-height: 22px;
   margin-top: 15px;
@@ -737,12 +737,12 @@ text-align: center;
 }
 
 .copyright-wrapper-inner {
-  background-color: var(--theme-color-light);
+  background-color: transparent;
   padding: 5px;
 }
 
 .copyright-wrapper a {
-  color:rgba(0,0,0,0.8);
+  color:rgba(255, 255, 255, 0.8);
 }
 
 /* Copyright css completed */
@@ -981,4 +981,7 @@ text-align: center;
 
 .contact-buttons-text{
   text-align: center;
+}
+.slick-slider{
+margin-bottom: 0px!important;
 }
